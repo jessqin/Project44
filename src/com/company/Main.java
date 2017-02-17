@@ -14,7 +14,7 @@ public class Main {
 
         String name;
         int j;
-        BankAccount ba [] = new BankAccount [5];
+        BankAccount ba [] = new BankAccount[5];
 
         for (j = 0; j<ba.length; j++);
         {
@@ -35,7 +35,7 @@ public class Main {
         {
             System.out.println(ba[x].name + ">>>" + ba[x].balance);
         }
-        
+
 
 
 

@@ -13,13 +13,18 @@ public class BankAccount implements Comparable
     public int compareTo(Object obj)
     {
         BankAccount otherAccount = (BankAccount) obj;
-
+        char [] cName = name.toCharArray();
+        int firstInitial = cName[0];
         int retValue;
-        if (balance<otherAccount.balance)
+
+        char[]coName = otherAccount.name.toCharArray();
+        int firstInitialOther = coName[0];
+
+        if (firstInitial<firstInitialOther)
         {
             retValue = -1;
         }
-        else if (balance > otherAccount.balance)
+        else if (firstInitial > firstInitialOther)
         {
             retValue = 1;
         }
