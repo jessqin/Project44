@@ -29,7 +29,9 @@ public class Main {
             ba[j] = new BankAccount(name,amount);
 
         }
-        Arrays.sort(ba);
+
+        Comparator comp = new BA_Comparator();
+        Arrays.sort(ba,comp);
 
         for (int x = 0; x<ba.length; x++)
         {
